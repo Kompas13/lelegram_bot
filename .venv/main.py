@@ -44,7 +44,6 @@ def start(m, res=False):
 def handle_text(message):
     global user_name
     user_name = message.from_user.first_name
-    bot.send_message(message.chat.id, get_foto_in_wiki(message.text))
     bot.send_message(message.chat.id, get_info_in_wiki(message.text))
 
 # Старт бота
